@@ -2,38 +2,26 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
-
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  title: 'Rizoma PE', // Título principal de tu sitio
+  tagline: 'Documentación y Guías para el Ecosistema Rizoma', // Subtítulo o eslogan
+  favicon: 'img/favicon.ico', // Asegúrate de tener este archivo en static/img/
 
-  // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
-  future: {
-    v4: true, // Improve compatibility with the upcoming Docusaurus v4
-  },
+  // URL de producción de tu sitio
+  url: 'https://carloszevallostrigoso.github.io',
+  // Subdirectorio donde se despliega. Para GitHub Pages, es el nombre del repo.
+  baseUrl: '/rizoma-pe/',
 
-  // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  // Configuración de despliegue en GitHub Pages
+  organizationName: 'carloszevallostrigoso', // Tu usuario de GitHub
+  projectName: 'rizoma-pe', // El nombre de tu repositorio
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'es',
+    locales: ['es'],
   },
 
   presets: [
@@ -41,12 +29,12 @@ const config: Config = {
       'classic',
       {
         docs: {
-          sidebarPath: './sidebars.ts',
-          routeBasePath: '/',
+          sidebarPath: './sidebars.js', // TypeScript prefiere la ruta explícita
+          // Por favor, edita la URL para apuntar al repo correcto.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/carloszevallostrigoso/rizoma-pe/tree/main/',
         },
-        blog: false,
+        blog: false, // Desactivamos el blog si no lo usarás.
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -55,24 +43,23 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
+    // Reemplaza con una imagen para las previews en redes sociales
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: 'Rizoma PE',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Logo de Rizoma PE',
+        src: 'img/logo.svg', // Asegúrate de tener un logo en static/img/
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          type: 'doc',
+          docId: 'introduccion', // ID de tu página de inicio de la documentación
           position: 'left',
-          label: 'Tutorial',
+          label: 'Documentación',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/carloszevallostrigoso/rizoma-pe',
           label: 'GitHub',
           position: 'right',
         },
@@ -85,43 +72,35 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'Introducción',
+              to: '/docs/introduccion',
             },
           ],
         },
         {
-          title: 'Community',
+          title: 'Comunidad',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'LinkedIn',
+              href: 'https://www.linkedin.com/in/carlos-alberto-zevallos-trigoso/',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
+              label: 'Twitter',
+              href: 'https://twitter.com/docusaurus',
             },
           ],
         },
         {
-          title: 'More',
+          title: 'Más',
           items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/carloszevallostrigoso/rizoma-pe',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Rizoma PE. Construido con Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
