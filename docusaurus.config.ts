@@ -3,18 +3,15 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'Rizoma PE', // Título principal de tu sitio
-  tagline: 'Documentación y Guías para el Ecosistema Rizoma', // Subtítulo o eslogan
-  favicon: 'img/favicon.ico', // Asegúrate de tener este archivo en static/img/
+  title: 'Rizoma PE',
+  tagline: 'Documentación y Guías para el Ecosistema Rizoma',
+  favicon: 'img/favicon.ico',
 
-  // URL de producción de tu sitio
   url: 'https://carloszevallostrigoso.github.io',
-  // Subdirectorio donde se despliega. Para GitHub Pages, es el nombre del repo.
   baseUrl: '/rizoma-pe/',
 
-  // Configuración de despliegue en GitHub Pages
-  organizationName: 'carloszevallostrigoso', // Tu usuario de GitHub
-  projectName: 'rizoma-pe', // El nombre de tu repositorio
+  organizationName: 'carloszevallostrigoso',
+  projectName: 'rizoma-pe',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -29,12 +26,11 @@ const config: Config = {
       'classic',
       {
         docs: {
-          sidebarPath: './sidebars.js', // TypeScript prefiere la ruta explícita
-          // Por favor, edita la URL para apuntar al repo correcto.
+          sidebarPath: './sidebars.ts', // ✅ ¡CORREGIDO!
           editUrl:
             'https://github.com/carloszevallostrigoso/rizoma-pe/tree/main/',
         },
-        blog: false, // Desactivamos el blog si no lo usarás.
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -43,18 +39,17 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Reemplaza con una imagen para las previews en redes sociales
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
       title: 'Rizoma PE',
       logo: {
         alt: 'Logo de Rizoma PE',
-        src: 'img/logo.svg', // Asegúrate de tener un logo en static/img/
+        src: 'img/logo.svg',
       },
       items: [
         {
           type: 'doc',
-          docId: 'introduccion', // ID de tu página de inicio de la documentación
+          docId: 'introduccion',
           position: 'left',
           label: 'Documentación',
         },
