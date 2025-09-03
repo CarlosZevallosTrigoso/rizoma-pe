@@ -26,7 +26,7 @@ const config: Config = {
       'classic',
       {
         docs: {
-          sidebarPath: './sidebars.ts', // ✅ ¡CORREGIDO!
+          sidebarPath: './sidebars.ts',
           editUrl:
             'https://github.com/carloszevallostrigoso/rizoma-pe/tree/main/',
         },
@@ -49,7 +49,7 @@ const config: Config = {
       items: [
         {
           type: 'doc',
-          docId: 'introduccion',
+          docId: 'introduccion', // ✅ Verificado
           position: 'left',
           label: 'Documentación',
         },
@@ -68,7 +68,7 @@ const config: Config = {
           items: [
             {
               label: 'Introducción',
-              to: '/docs/introduccion',
+              to: '/docs/introduccion', // ✅ Verificado
             },
           ],
         },
@@ -78,10 +78,6 @@ const config: Config = {
             {
               label: 'LinkedIn',
               href: 'https://www.linkedin.com/in/carlos-alberto-zevallos-trigoso/',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
             },
           ],
         },
