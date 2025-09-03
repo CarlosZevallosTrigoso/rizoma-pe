@@ -1,6 +1,8 @@
 import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
 
 const sidebars: SidebarsConfig = {
+  // By default, Docusaurus generates a sidebar from the docs folder structure
+  // To have full control, we define it here
   tutorialSidebar: [
     {
       type: 'doc',
@@ -12,7 +14,7 @@ const sidebars: SidebarsConfig = {
       label: 'Guías de Inicio',
       items: ['guia-uno', 'guia-dos'],
     },
-    // Add more categories or documents here
+    // You can add more categories or standalone documents here
   ],
 };
 
