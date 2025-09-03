@@ -3,7 +3,6 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
-
 import styles from './index.module.css';
 
 function HomepageHeader() {
@@ -18,7 +17,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/introduccion"> {/* ✅ Verificado y corregido */}
+            to="/docs/introduccion"> {/* ✅ Esta es la ruta correcta */}
             Empezar Ahora - 5min ⏱️
           </Link>
         </div>
@@ -35,7 +34,7 @@ export default function Home(): JSX.Element {
       description="Documentación y Guías para el Ecosistema Rizoma">
       <HomepageHeader />
       <main>
-        {/* Aquí puedes añadir más secciones si lo deseas */}
+        {/* Puedes añadir más secciones aquí */}
       </main>
     </Layout>
   );
