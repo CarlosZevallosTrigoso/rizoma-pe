@@ -5,6 +5,7 @@ import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
+// Header Component
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
@@ -17,8 +18,8 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/introduccion"> {/* ✅ Esta es la ruta correcta */}
-            Empezar Ahora - 5min ⏱️
+            to="/docs/introduccion">
+            Empezar Ahora →
           </Link>
         </div>
       </div>
@@ -26,6 +27,7 @@ function HomepageHeader() {
   );
 }
 
+// Main Homepage Component
 export default function Home(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
   return (
@@ -34,7 +36,7 @@ export default function Home(): JSX.Element {
       description="Documentación y Guías para el Ecosistema Rizoma">
       <HomepageHeader />
       <main>
-        {/* Puedes añadir más secciones aquí */}
+        {/* You can add a features section here if you like */}
       </main>
     </Layout>
   );
