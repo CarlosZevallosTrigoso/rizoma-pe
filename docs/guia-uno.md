@@ -10,7 +10,7 @@ Sigue estos pasos para instalar el componente principal del proyecto.
 
 ## Requisitos Previos
 
--   Node.js v16 o superior
+-   Node.js v16 o superiora
 -   Yarn o npm
 
 ## Pasos
