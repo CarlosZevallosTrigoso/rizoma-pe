@@ -5,7 +5,6 @@ import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
-// Header Component
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
@@ -27,7 +26,6 @@ function HomepageHeader() {
   );
 }
 
-// Main Homepage Component
 export default function Home(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
   return (
@@ -36,7 +34,7 @@ export default function Home(): JSX.Element {
       description="Documentación y Guías para el Ecosistema Rizoma">
       <HomepageHeader />
       <main>
-        {/* You can add a features section here if you like */}
+        {/* You can add a features section here later if you want */}
       </main>
     </Layout>
   );
