@@ -5,11 +5,6 @@ const sidebars: SidebarsConfig = {
   // To have full control, we define it here
   tutorialSidebar: [
     {
-      type: 'doc',
-      id: 'ani2022',
-      label: 'Análisis de las imágenes (2022)',
-    },
-    {
       type: 'category',
       label: 'Cursos/Talleres pasados',
       items: ['ani2022']
