@@ -12,7 +12,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Cursos/talleres pasados',
-      items: ['ani2022']
+      items: ['ani2022','neo2022']
     },
     // You can add more categories or standalone documents here
   ],
