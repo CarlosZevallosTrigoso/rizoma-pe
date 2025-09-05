@@ -46,14 +46,6 @@ const config: Config = {
       logo: {
         src: 'img/rizomalogo.svg',
       },
-      items: [
-        {
-          type: 'doc',
-          docId: 'introduccion',
-          position: 'left',
-          label: 'Documentación',
-        },
-      ],
     },
     footer: {
       style: 'dark',
