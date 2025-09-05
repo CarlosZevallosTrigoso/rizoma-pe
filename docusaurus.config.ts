@@ -53,11 +53,6 @@ const config: Config = {
           position: 'left',
           label: 'Documentación',
         },
-        {
-          href: 'https://github.com/carloszevallostrigoso/rizoma-pe',
-          label: 'GitHub',
-          position: 'right',
-        },
       ],
     },
     footer: {
