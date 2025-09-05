@@ -1,4 +1,3 @@
-// @ts-check
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
@@ -8,9 +7,11 @@ const config: Config = {
   tagline: 'Documentación y Guías para el Ecosistema Rizoma',
   favicon: 'img/favicon.ico',
 
+  // Production URL
   url: 'https://carloszevallostrigoso.github.io',
   baseUrl: '/rizoma-pe/',
 
+  // GitHub Pages deployment config
   organizationName: 'carloszevallostrigoso',
   projectName: 'rizoma-pe',
 
@@ -28,15 +29,10 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          // Elimina esta línea para quitar el botón "Editar esta página"
-          // editUrl: 'https://github.com/carloszevallostrigoso/rizoma-pe/tree/main/',
-          
-          // Agrega esta propiedad para quitar la navegación de página (siguiente/anterior)
-          docItem: {
-            pagination: false,
-          },
+          editUrl:
+            'https://github.com/carloszevallostrigoso/rizoma-pe/tree/main/',
         },
-        blog: false,
+        blog: false, // Disables the blog plugin
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -45,11 +41,11 @@ const config: Config = {
   ],
 
   themeConfig: {
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/docusaurus-social-card.jpg', // Social card image
     navbar: {
       title: '',
       logo: {
-        src: 'img/rizomalogo.svg',
+        src: 'img/rizomalogo.svg', // Ensure you have a logo in `static/img/`
       },
       items: [
         {
