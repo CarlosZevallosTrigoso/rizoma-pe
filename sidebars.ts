@@ -5,10 +5,14 @@ const sidebars: SidebarsConfig = {
   // Para tener un control total, lo definimos aquí
   tutorialSidebar: [
     {
+      type: 'docs',
+      label: 'introduccion',
+    },
+    {
       type: 'category',
       label: 'Cursos/talleres',
       items: [
-        'introduccion', // curso actual
+        '10_ani_2025', // curso actual
       ],
     },
     {
