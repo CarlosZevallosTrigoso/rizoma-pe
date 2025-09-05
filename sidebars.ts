@@ -29,4 +29,4 @@ const sidebars: SidebarsConfig = {
   },
 ],
 
-module.exports = sidebars;
+export default sidebars;
