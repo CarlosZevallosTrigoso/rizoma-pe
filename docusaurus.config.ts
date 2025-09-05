@@ -43,7 +43,7 @@ const config: Config = {
   themeConfig: {
     image: 'img/docusaurus-social-card.jpg', // Social card image
     navbar: {
-      title: 'Rizoma PE',
+      title: '',
       logo: {
         src: 'img/rizomalogo.svg', // Ensure you have a logo in `static/img/`
       },
