@@ -1,31 +1,22 @@
 // @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
-
 import {themes as prismThemes} from 'prism-react-renderer';
+import type {Config} from '@docusaurus/types';
+import type * as Preset from '@docusaurus/preset-classic';
 
-/** @type {import('@docusaurus/types').Config} */
-const config = {
-  title: 'Rizoma',
-  tagline: 'Dinosaurs are cool',
+const config: Config = {
+  title: 'Rizoma PE',
+  tagline: 'Documentación y Guías para el Ecosistema Rizoma',
   favicon: 'img/favicon.ico',
 
-  // Set the production url of your site here
-  url: 'https://rizoma.pe',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  url: 'https://carloszevallostrigoso.github.io',
+  baseUrl: '/rizoma-pe/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'Rizoma-PE', // Usually your GitHub org/user name.
-  projectName: 'web', // Usually your repo name.
+  organizationName: 'carloszevallostrigoso',
+  projectName: 'rizoma-pe',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'es',
     locales: ['es'],
@@ -34,97 +25,84 @@ const config = {
   presets: [
     [
       'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
+      {
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-
-          // Agrega esta propiedad para quitar la navegación de página
+          sidebarPath: './sidebars.ts',
+          // Elimina esta línea para quitar el botón "Editar esta página"
+          // editUrl: 'https://github.com/carloszevallostrigoso/rizoma-pe/tree/main/',
+          
+          // Agrega esta propiedad para quitar la navegación de página (siguiente/anterior)
           docItem: {
             pagination: false,
           },
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
+        blog: false,
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: './src/css/custom.css',
         },
-      }),
+      } satisfies Preset.Options,
     ],
   ],
 
-  themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-      // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
-      navbar: {
-        title: 'Rizoma',
-        logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+  themeConfig: {
+    image: 'img/docusaurus-social-card.jpg',
+    navbar: {
+      title: '',
+      logo: {
+        src: 'img/rizomalogo.svg',
+      },
+      items: [
+        {
+          type: 'doc',
+          docId: 'introduccion',
+          position: 'left',
+          label: 'Documentación',
         },
-        items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Docs',
-          },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/Rizoma-PE',
-            label: 'GitHub',
-            position: 'right',
-          },
-        ],
-      },
-      footer: {
-        style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Introducción',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
-            title: 'Comunidad',
-            items: [
-              {
-                label: 'LinkedIn',
-                href: 'https://www.linkedin.com/company/rizomape/',
-              },
-            ],
-          },
-          {
-            title: 'Más',
-            items: [
-              {
-                label: 'GitHub',
-                href: 'https://github.com/Rizoma-PE/web',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} Rizoma PE. Built with Docusaurus.`,
-      },
-      prism: {
-        theme: prismThemes.github,
-        darkTheme: prismThemes.dracula,
-      },
-    }),
+        {
+          href: 'https://github.com/carloszevallostrigoso/rizoma-pe',
+          label: 'GitHub',
+          position: 'right',
+        },
+      ],
+    },
+    footer: {
+      style: 'dark',
+      links: [
+        {
+          title: 'Docs',
+          items: [
+            {
+              label: 'Introducción',
+              to: '/docs/introduccion',
+            },
+          ],
+        },
+        {
+          title: 'Comunidad',
+          items: [
+            {
+              label: 'LinkedIn',
+              href: 'https://www.linkedin.com/in/carlos-alberto-zevallos-trigoso/',
+            },
+          ],
+        },
+        {
+          title: 'Más',
+          items: [
+            {
+              label: 'GitHub',
+              href: 'https://github.com/carloszevallostrigoso/rizoma-pe',
+            },
+          ],
+        },
+      ],
+      copyright: `Copyright © ${new Date().getFullYear()} Rizoma PE. Built with Docusaurus.`,
+    },
+    prism: {
+      theme: prismThemes.github,
+      darkTheme: prismThemes.dracula,
+    },
+  } satisfies Preset.ThemeConfig,
 };
 
 export default config;
