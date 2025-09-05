@@ -3,6 +3,7 @@ id: introduccion
 title: Imágenes que atraviesan_análisis de las imágenes desde la semiótica de C.S. Peirce
 pagination_next: null
 pagination_prev: null
+slug: /
 ---
 
 
