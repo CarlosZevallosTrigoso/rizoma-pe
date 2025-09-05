@@ -8,7 +8,7 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: 'Cursos/talleres',
       items: [
-        'ani2022', // Documento ani2022
+        'introduccion', // Documento ani2022
       ],
     },
     {
