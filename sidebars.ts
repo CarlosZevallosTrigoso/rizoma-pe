@@ -7,6 +7,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'doc',
       id: 'introduccion',
+      label: 'introduccion', 
     },
     {
       type: 'category',
