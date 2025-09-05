@@ -6,15 +6,9 @@ const sidebars: SidebarsConfig = {
   tutorialSidebar: [
     {
       type: 'doc',
-      id: 'introduccion', 
-      label: 'Introducción',
+      id: 'ANI2022',
+      label: 'Análisis de las imágenes (2022)',
     },
-    {
-      type: 'category',
-      label: 'Guías de Inicio',
-      items: ['guia-uno', 'guia-dos'],
-    },
-    // You can add more categories or standalone documents here
   ],
 };
 
