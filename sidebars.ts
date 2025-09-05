@@ -10,6 +10,11 @@ const sidebars: SidebarsConfig = {
       label: 'Análisis de las imágenes (2022)',
     },
     {
+      type: 'category',
+      label: 'Cursos/Talleres pasados',
+      items: ['ani2022']
+    },
+    {
       type: 'doc',
       id: 'introduccion', 
       label: 'Introducción',
