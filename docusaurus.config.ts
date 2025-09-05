@@ -46,7 +46,7 @@ const config: Config = {
       title: 'Rizoma PE',
       logo: {
         alt: 'Rizoma PE Logo',
-        src: 'img/rizomalogo.png', // Ensure you have a logo in `static/img/`
+        src: 'img/rizomalogo.svg', // Ensure you have a logo in `static/img/`
       },
       items: [
         {
