@@ -5,7 +5,7 @@ const sidebars: SidebarsConfig = {
   // Para tener un control total, lo definimos aquí
   tutorialSidebar: [
     {
-      type: 'docs',
+      type: 'doc',
       id: 'introduccion',
     },
     {
