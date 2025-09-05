@@ -47,7 +47,7 @@ const config: Config = {
         src: 'img/rizomalogo.svg', // Ensure you have a logo in `static/img/`
       },
       items: [
-        {
+      //  {
           type: 'doc',
           docId: 'introduccion',
           position: 'left',
