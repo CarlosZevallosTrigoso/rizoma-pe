@@ -9,6 +9,17 @@ const sidebars: SidebarsConfig = {
       id: 'ani2022',
       label: 'Análisis de las imágenes (2022)',
     },
+    {
+      type: 'doc',
+      id: 'introduccion', 
+      label: 'Introducción',
+    },
+    {
+      type: 'category',
+      label: 'Guías de Inicio',
+      items: ['guia-uno', 'guia-dos'],
+    },
+    // You can add more categories or standalone documents here
   ],
 };
 
