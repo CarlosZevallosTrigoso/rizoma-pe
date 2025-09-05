@@ -1,6 +1,6 @@
 ---
 id: introduccion
-title: Imágenes que atraviesan: análisis de las imágenes desde la semiótica de C.S. Peirce
+title: Imágenes que atraviesan_análisis de las imágenes desde la semiótica de C.S. Peirce
 ---
 
 ![Texto alternativo](imgs/10_AIG2025.jpg)
