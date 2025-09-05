@@ -6,6 +6,7 @@ pagination_prev: false
 hide_table_of_contents: true
 ---
 
+
 ![Texto alternativo](imgs/10_AIG2025.jpg)
 
 **Fechas:** jueves 7, 14 y 21 de agosto.  
