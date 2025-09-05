@@ -28,7 +28,7 @@ const config: Config = {
       'classic',
       {
         docs: {
-          routeBasePath: '/',
+          sidebarPath: './sidebars.ts',
           // editUrl: 'https://github.com/carloszevallostrigoso/rizoma-pe/tree/main/',
         },
         blog: false, // Disables the blog plugin
