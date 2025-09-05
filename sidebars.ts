@@ -6,7 +6,12 @@ const sidebars: SidebarsConfig = {
   tutorialSidebar: [
     {
       type: 'category',
-      label: 'Cursos/Talleres pasados',
+      label: 'Cursos/talleres',
+      items: ['ani2022']
+    },
+    {
+      type: 'category',
+      label: 'Cursos/talleres pasados',
       items: ['ani2022']
     },
     // You can add more categories or standalone documents here
