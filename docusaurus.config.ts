@@ -45,7 +45,6 @@ const config: Config = {
     navbar: {
       title: 'Rizoma PE',
       logo: {
-        alt: 'Rizoma PE Logo',
         src: 'img/rizomalogo.svg', // Ensure you have a logo in `static/img/`
       },
       items: [
