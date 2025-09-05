@@ -9,11 +9,6 @@ const sidebars: SidebarsConfig = {
       label: 'Cursos/Talleres pasados',
       items: ['ani2022']
     },
-    {
-      type: 'doc',
-      id: 'introduccion', 
-      label: 'Introducción',
-    },
     // You can add more categories or standalone documents here
   ],
 };
