@@ -6,7 +6,7 @@ const sidebars: SidebarsConfig = {
   tutorialSidebar: [
     {
       type: 'doc',
-      id: 'ani2022', // He cambiado el ID para que coincida con tu documento
+      id: 'ani2022',
       label: 'Análisis de las imágenes (2022)',
     },
   ],
