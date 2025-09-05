@@ -25,6 +25,9 @@ const sidebars: SidebarsConfig = {
         '8_ID2024',
         '9_idn3_2025',
         '10_ani2025',
-    ],
-  },
-],
+      ],
+    },
+  ],
+};
+
+export default sidebars;
