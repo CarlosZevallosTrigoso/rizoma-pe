@@ -27,6 +27,6 @@ const sidebars: SidebarsConfig = {
         '10_ani2025',
     ],
   },
-];
+],
 
 export default sidebars;
