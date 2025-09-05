@@ -29,8 +29,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          editUrl:
-            'https://github.com/carloszevallostrigoso/rizoma-pe/tree/main/',
+          // editUrl: 'https://github.com/carloszevallostrigoso/rizoma-pe/tree/main/',
         },
         blog: false, // Disables the blog plugin
         theme: {
