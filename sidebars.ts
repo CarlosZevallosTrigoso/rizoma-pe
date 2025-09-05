@@ -7,7 +7,6 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Cursos/talleres',
-      link: {type: 'doc', id: 'ani2022'}, // Agregamos un enlace para la categoría
       items: [
         'ani2022', // Documento ani2022
       ],
