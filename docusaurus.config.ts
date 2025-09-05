@@ -49,38 +49,6 @@ const config: Config = {
     },
     footer: {
       style: 'dark',
-      links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Introducción',
-              // ⭐ Importante: La ruta debe ser '/' si tu docs/intro.md es la página de inicio
-              // De lo contrario, usa el nombre del doc, por ejemplo: '/introduccion'
-              // Verifica tu archivo `docs/introduccion.md` para confirmarlo.
-              to: '/',
-            },
-          ],
-        },
-        {
-          title: 'Comunidad',
-          items: [
-            {
-              label: 'LinkedIn',
-              href: 'https://www.linkedin.com/in/carlos-alberto-zevallos-trigoso/',
-            },
-          ],
-        },
-        {
-          title: 'Más',
-          items: [
-            {
-              label: 'GitHub',
-              href: 'https://github.com/carloszevallostrigoso/rizoma-pe',
-            },
-          ],
-        },
-      ],
       copyright: `Copyright © ${new Date().getFullYear()} Rizoma PE. Built with Docusaurus.`,
     },
     prism: {
