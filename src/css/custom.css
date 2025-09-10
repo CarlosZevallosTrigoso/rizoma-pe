@@ -1,22 +1,140 @@
+/* src/css/custom.css */
+
+/**
+ * ============================================================================
+ * 1. VARIABLES GLOBALES (MODO CLARO)
+ * Inspirado en el diseño de Astronomer.io
+ * ============================================================================
+ */
 :root {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa585;
-  --ifm-color-primary-darkest: #198770;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b6;
-  --ifm-color-primary-lightest: #4fdebda;
+  /* Paleta de colores principal */
+  --ifm-color-primary: #2563eb; /* Azul primario para enlaces y acentos */
+  --ifm-color-primary-dark: #1d4ed8;
+  --ifm-color-primary-darker: #1e40af;
+  --ifm-color-primary-darkest: #1e3a8a;
+  --ifm-color-primary-light: #3b82f6;
+  --ifm-color-primary-lighter: #60a5fa;
+  --ifm-color-primary-lightest: #93c5fd;
+
+  /* Colores de fondo y texto */
+  --ifm-background-color: #f9fafb; /* Fondo general muy claro, casi blanco */
+  --ifm-font-color-base: #374151; /* Color de texto principal (gris oscuro) */
+  --ifm-font-color-secondary: #6b7280; /* Color para texto secundario */
+
+  /* Tipografía */
+  --ifm-font-family-base: 'system-ui', -apple-system, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --ifm-heading-font-family: var(--ifm-font-family-base);
+  --ifm-heading-color: #111827; /* Encabezados más oscuros */
+  --ifm-h1-font-size: 2.5rem;
+  --ifm-h2-font-size: 2rem;
+  --ifm-h3-font-size: 1.5rem;
+
+  /* Estilos de enlaces */
+  --ifm-link-color: var(--ifm-color-primary);
+  --ifm-link-hover-decoration: underline;
+
+  /* Estilos para el código */
+  --ifm-code-background: #f3f4f6; /* Fondo de bloques de código (gris claro) */
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-pre-padding: 1rem;
+
+  /* Sombras y bordes */
+  --ifm-global-shadow-lw: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --ifm-global-radius: 0.5rem; /* Bordes redondeados más pronunciados */
 }
 
-html[data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa585;
-  --ifm-color-primary-darkest: #198770;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b6;
-  --ifm-color-primary-lightest: #4fdebda;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+/**
+ * ============================================================================
+ * 2. VARIABLES PARA MODO OSCURO
+ * ============================================================================
+ */
+[data-theme='dark'] {
+  /* Paleta de colores principal */
+  --ifm-color-primary: #60a5fa; /* Azul más brillante para modo oscuro */
+
+  /* Colores de fondo y texto */
+  --ifm-background-color: #111827; /* Fondo oscuro */
+  --ifm-font-color-base: #d1d5db; /* Color de texto principal (gris claro) */
+  --ifm-font-color-secondary: #9ca3af; /* Color para texto secundario */
+
+  /* Tipografía */
+  --ifm-heading-color: #f9fafb; /* Encabezados casi blancos */
+
+  /* Estilos para el código */
+  --ifm-code-background: #1f2937; /* Fondo de bloques de código más oscuro */
+}
+
+/**
+ * ============================================================================
+ * 3. ESTILOS DE COMPONENTES ESPECÍFICOS
+ * ============================================================================
+ */
+
+/* Contenedor principal del contenido */
+.main-wrapper {
+  background-color: white; /* El área del contenido es blanca */
+  border-right: 1px solid #e5e7eb; /* Línea divisoria sutil */
+}
+
+[data-theme='dark'] .main-wrapper {
+  background-color: #1f2937; /* El área del contenido es más oscura */
+  border-right: 1px solid #374151;
+}
+
+/* Estilo para los bloques de código */
+div[class^='codeBlockContainer_'] {
+  border: 1px solid #e5e7eb;
+  border-radius: var(--ifm-global-radius);
+  box-shadow: var(--ifm-global-shadow-lw);
+}
+
+[data-theme='dark'] div[class^='codeBlockContainer_'] {
+  border-color: #374151;
+}
+
+/* Estilo para la cabecera del bloque de código */
+div[class^='codeBlockHeader_'] {
+  background-color: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+  color: #4b5563;
+  font-weight: 500;
+}
+
+[data-theme='dark'] div[class^='codeBlockHeader_'] {
+  background-color: #374151;
+  border-bottom-color: #4b5563;
+  color: #d1d5db;
+}
+
+/* Estilo para las notas (Admonitions) */
+.admonition {
+  border-radius: var(--ifm-global-radius);
+  border: 1px solid transparent;
+  box-shadow: var(--ifm-global-shadow-lw);
+}
+
+/* Ejemplo para admonition tipo "NOTE" */
+.admonition-note {
+  background-color: #eff6ff;
+  border-color: #dbeafe;
+  border-left-width: 4px;
+  border-left-color: #60a5fa;
+}
+
+.admonition-note .admonition-heading,
+.admonition-note .admonition-icon {
+  color: #2563eb;
+}
+
+[data-theme='dark'] .admonition-note {
+  background-color: #262e40;
+  border-color: #2c3c5c;
+  border-left-color: #60a5fa;
+}
+
+[data-theme='dark'] .admonition-note .admonition-heading,
+[data-theme='dark'] .admonition-note .admonition-icon {
+  color: #93c5fd;
 }
