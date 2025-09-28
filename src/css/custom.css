@@ -24,10 +24,8 @@
   --ifm-font-color-secondary: #6b7280; /* Color para texto secundario */
 
   /* Tipografía */
-  --ifm-font-family-base: 'system-ui', -apple-system, 'Segoe UI', Roboto,
-    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  --ifm-heading-font-family: var(--ifm-font-family-base);
+  --ifm-font-family-base: 'Noto Serif', serif;
+  --ifm-heading-font-family: 'Noto Serif', serif;
   --ifm-heading-color: #111827; /* Encabezados más oscuros */
   --ifm-h1-font-size: 2.5rem;
   --ifm-h2-font-size: 2rem;
@@ -139,10 +137,4 @@ div[class^='codeBlockHeader_'] {
 [data-theme='dark'] .admonition-note .admonition-heading,
 [data-theme='dark'] .admonition-note .admonition-icon {
   color: #93c5fd;
-}
-
-  /* ... otras variables ... */
-
-  --ifm-font-family-base: 'Noto Serif', serif;
-  --ifm-heading-font-family: 'Noto Serif', serif; /* Opcional: si quieres usar la misma fuente para los encabezados */
 }
