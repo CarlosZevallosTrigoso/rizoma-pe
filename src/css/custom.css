@@ -1,5 +1,7 @@
 /* src/css/custom.css */
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+
 /**
  * ============================================================================
  * 1. VARIABLES GLOBALES (MODO CLARO)
@@ -137,4 +139,10 @@ div[class^='codeBlockHeader_'] {
 [data-theme='dark'] .admonition-note .admonition-heading,
 [data-theme='dark'] .admonition-note .admonition-icon {
   color: #93c5fd;
+}
+
+  /* ... otras variables ... */
+
+  --ifm-font-family-base: 'Noto Serif', serif;
+  --ifm-heading-font-family: 'Noto Serif', serif; /* Opcional: si quieres usar la misma fuente para los encabezados */
 }
